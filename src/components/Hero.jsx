@@ -5,11 +5,12 @@ import hi from '../assets/hi.png'
 import CV from '../assets/CV.pdf'
 import { DownloadIcon } from 'lucide-react'
 import { Mail } from 'lucide-react'
+import { link } from 'framer-motion/client'
 
 const Hero = ({ darkMode }) => {
   const socialIcons = [
-    { icon: linkedin, alt: 'linkedin' },
-    { icon: github, alt: 'github' },
+    { icon: linkedin, alt: 'linkedin', link: 'https://www.linkedin.com/in/sahil-chaurasiya-dev/' },
+    { icon: github, alt: 'github', link: 'https://github.com/sahilchaurasiyadev-prog' },
   ];
 
   const darkTheme = {
@@ -41,8 +42,9 @@ const Hero = ({ darkMode }) => {
               {socialIcons.map((social, index) => (
                 <a
                   key={index}
-                  href='#'
-                  target='_blank'
+                  href={social.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   data-aos-delay={`${400 + index * 100}`}
                   className='transform hover:scale-110 transition-transform duration-300'>
                   <img
@@ -60,14 +62,14 @@ const Hero = ({ darkMode }) => {
             <p className={`mb-6 sm:mb-8 leading-relaxed max-w-md sm:max-w-lg ${theme.textSecondary}`}
               data-aos='fade-up'
               data-aos-dela='600'>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum molestias ea sit! Obcaecati voluptate itaque rem ab modi quod dolor? Incidunt consectetur odio expedita tenetur quod doloribus, enim voluptate modi nemo aspernatur tempore accusamus quaerat amet neque similique molestiae inventore iste voluptatum corrupti placeat delectus.
+              I’m a frontend developer passionate about building clean, responsive, and user-friendly web experiences using React.js and modern web technologies. I enjoy turning ideas into real products and continuously improving my skills through real-world projects and client work.
             </p>
             {/* Buttons */}
             <div className='w-full pt-4 sm:pt-6'>
               <div className='flex flex-col sm:flex-row justify-center lg:justify-start gap-3 sm:gap-4'
                 data-aos='fade-up'
                 data-aos-delay='700'>
-                <a href={CV} download className='w-full sm:w-auto'>
+                <a href={CV} target="_blank" rel="noopener noreferrer" className='w-full sm:w-auto'>
                   <button className='w-full sm:w-auto inline-flex items-center justify-center text-white bg-linear-to-r from-orange-500 to-amber-500 border-0 py-3 px-6 sm:px-8 hover:shadow-[0_0_40px_rgb(255,165,0,0.7)] hover:scale-105 rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform'>
                     <DownloadIcon className='w-4 h-4 sm:h-5 sm:w-5 mr-2' />
                     Download CV
@@ -75,7 +77,7 @@ const Hero = ({ darkMode }) => {
                 </a>
                 <a href="#contact" className='w-full sm:w-auto'>
                   <button className={`w-full sm:w-auto inline-flex items-center ${theme.buttonSecondary} justify-center  border-0 py-3 px-6 sm:px-8 hover:shadow-[0_0_40px_rgb(255,165,0,0.7)] hover:scale-105 rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform`}>
-                    <Mail className='w-4 h-4 sm:w-5 sm:h-5 mr-2'/>
+                    <Mail className='w-4 h-4 sm:w-5 sm:h-5 mr-2' />
                     Contact Me
 
                   </button>
@@ -86,22 +88,22 @@ const Hero = ({ darkMode }) => {
           </div>
           {/* Image */}
           <div
-          className='lg:w-1/2 w-full max-w-md lg:max-w-lg mt-8 lg:mt-0 flex justify-center'
-          data-aos='fade-left'
-          data-aos-delay='400'
+            className='lg:w-1/2 w-full max-w-md lg:max-w-lg mt-8 lg:mt-0 flex justify-center'
+            data-aos='fade-left'
+            data-aos-delay='400'
           >
             <div className='relative w-4/5 sm:w-3/4 lg:w-full'>
-            <div className='relative overflow-hidden'>
-              <img 
-              src={hero}
-              alt="Hero Image"
-              className='w-full h-auto object-cover transform hover:scale-105 transition-transform duration-500'/>
+              <div className='relative overflow-hidden'>
+                <img
+                  src={hero}
+                  alt="Hero Image"
+                  className='w-full h-auto object-cover transform hover:scale-105 transition-transform duration-500' />
               </div>
-              <img 
-              src={hi}
-              alt="Hi icon"
-              className='absolute -top-14 right-2 sm:right-22 w-14 sm:w-30 sm:h-30 object-contain animate-bounce opacity-90 z-10'/>
-              </div>
+              <img
+                src={hi}
+                alt="Hi icon"
+                className='absolute -top-14 right-2 sm:right-22 w-14 sm:w-30 sm:h-30 object-contain animate-bounce opacity-90 z-10' />
+            </div>
 
           </div>
         </div>

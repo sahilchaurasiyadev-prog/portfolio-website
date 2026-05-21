@@ -1,5 +1,5 @@
 import about from '../assets/about.png'
-const About = ({darkMode}) => {
+const About = ({ darkMode }) => {
     return (
         <section id="about" className={`min-h-screen overflow-hidden flex items-center justify-center px-4 sm:px-6`}>
             <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
@@ -35,7 +35,7 @@ const About = ({darkMode}) => {
                     <p className={`text-sm sm:text-base lg:text-lg xl:text-xl mb-6 sm:mb-8 leading-relaxed bg-linear-to-r from-orange-900/10 to-orange-900/5 p-4 sm:p-6 rounded-xl sm:rounded-2xl backdrop-blur-sm ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}
                         data-aos='fade-up'
                         data-aos-delay='500'>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio atque alias deserunt commodi iste omnis ipsum, expedita, eligendi veniam officia hic repellendus ea fugiat aperiam illum dolorem vero magni, maiores perspiciatis? Facere, vitae consequatur ratione enim quo, officiis distinctio exercitationem corrupti fuga, quam saepe praesentium.
+                        I’m a frontend developer based in Mumbai and a BSc IT graduate from Ghanshyamdas Saraf College. Currently working as a full-time Web Developer at Webtactic, I enjoy building clean, responsive, and user-friendly web experiences while continuously learning and growing as a developer.
                     </p>
                     <div
                         className='flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 lg:gap-8 mb-6 sm:mb-8'>
@@ -45,17 +45,17 @@ const About = ({darkMode}) => {
                             className='text-center'
                             data-aos='zoom-in'
                             data-aos-delay='600'>
-                            <div className='text-2xl sm:text-3xl lg:text-4xl font-bold text-orange-400'>10+</div>
+                            <div className='text-2xl sm:text-3xl lg:text-4xl font-bold text-orange-400'>1+</div>
                             <div className={`text-xs sm:text-sm lg:text-base ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>Years of Experience</div>
                         </div>
 
-                        { /*Education*/}
+                        { /*Client Websites*/}
                         <div
                             className='text-center'
                             data-aos='zoom-in'
                             data-aos-delay='650'>
-                            <div className='text-2xl sm:text-3xl lg:text-4xl font-bold text-orange-400'>10+</div>
-                            <div className={`text-xs sm:text-sm lg:text-base ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>Education</div>
+                            <div className='text-2xl sm:text-3xl lg:text-4xl font-bold text-orange-400'>15+</div>
+                            <div className={`text-xs sm:text-sm lg:text-base ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>Client Websites</div>
                         </div>
 
                         { /*Projects Completed*/}
@@ -63,15 +63,15 @@ const About = ({darkMode}) => {
                             className='text-center'
                             data-aos='zoom-in'
                             data-aos-delay='700'>
-                            <div className='text-2xl sm:text-3xl lg:text-4xl font-bold text-orange-400'>100+</div>
-                            <div className={`text-xs sm:text-sm lg:text-base ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>Projects Completed</div>
+                            <div className='text-2xl sm:text-3xl lg:text-4xl font-bold text-orange-400'>5+</div>
+                            <div className={`text-xs sm:text-sm lg:text-base ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>Personal Projects</div>
                         </div>
 
                     </div>
                     <button className={`w-full sm:w-auto border-2 border-orange-500 inline-flex items-center justify-center py-2 px-4 sm:px-8 hover:shadow-[0_0_40px_rgba(255,165,0,0.7)] hover:scale-105 rounded-full text-base sm:text-lg font-semibold transition-all duration-300 ease-in-out transform
-                        ${darkMode 
-                        ? 'text-white bg-orange-500/10' 
-                        : 'text-gray-800 bg-white/90'}`}
+                        ${darkMode
+                            ? 'text-white bg-orange-500/10'
+                            : 'text-gray-800 bg-white/90'}`}
                         data-aos='fade-up'
                         data-aos-delay='800'>
                         Learn More

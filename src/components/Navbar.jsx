@@ -61,7 +61,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             </span>
           </motion.a>
           {/* Navigation Items */}
-          <div className="lg:flex items-center space-x-6">
+          <div className="hidden lg:flex items-center space-x-6">
             {navItems.map((item) => (
               <a key={item.name}
                 href={item.link}

@@ -2,7 +2,7 @@ import linkedin from '../assets/linkedin.png'
 import github from '../assets/github.png'
 import hero from '../assets/hero.png'
 import hi from '../assets/hi.png'
-import CV from '../assets/CV.pdf'
+import CV from '../assets/Sahil_Chaurasiya_Resume.pdf'
 import { DownloadIcon } from 'lucide-react'
 import { Mail } from 'lucide-react'
 import { link } from 'framer-motion/client'
@@ -62,8 +62,7 @@ const Hero = ({ darkMode }) => {
             <p className={`mb-6 sm:mb-8 leading-relaxed max-w-md sm:max-w-lg ${theme.textSecondary}`}
               data-aos='fade-up'
               data-aos-dela='600'>
-              I’m a frontend developer passionate about building clean, responsive, and user-friendly web experiences using React.js and modern web technologies. I enjoy turning ideas into real products and continuously improving my skills through real-world projects and client work.
-            </p>
+              I’m a Software Developer focused on building practical, responsive, and user-friendly full-stack applications using the MERN stack. I enjoy turning ideas into real products and working across the frontend, backend, APIs, and databases while continuously improving through real-world projects and development.</p>
             {/* Buttons */}
             <div className='w-full pt-4 sm:pt-6'>
               <div className='flex flex-col sm:flex-row justify-center lg:justify-start gap-3 sm:gap-4'

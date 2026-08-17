@@ -10,45 +10,57 @@ const Projects = ({ darkMode }) => {
     const projects = [
         {
             id: 1,
-            title: 'E-Commerce Platform',
-            desc: 'A full-stack e-commerce platform built with React, Node.js, and MongoDB. Features include user authentication, product management, and a shopping cart.',
+            title: 'Tasty Recipes',
+            desc: 'A full-stack recipe platform where users can generate personalized recipes based on ingredients and dietary preferences, with authentication and AI-powered recipe generation using the Gemini API.',
             image: project1,
-            tags: ['React', 'Node.js', 'MongoDB']
+            tags: ['React', 'Node', 'Express', 'MongoDB', 'JWT', 'Gemini API'],
+            codeUrl: 'https://github.com/sahilchaurasiyadev-prog/tasty-recipes',
+            demoUrl: 'https://tasty-recipes-frontend.vercel.app/',
         },
         {
             id: 2,
-            title: 'Fitness Tracker App',
-            desc: 'A full-stack fitness tracking app built with React, Node.js, and MongoDB. Features include user authentication, workout logging, and progress tracking.',
+            title: 'AuraEcommerce',
+            desc: 'A full-stack e-commerce application with product, cart, and order functionality, featuring a Node.js and Express backend, MongoDB database, and REST APIs integrated with the Angular frontend.',
             image: project2,
-            tags: ['React Native', 'Firebase']
+            tags: ['Angular', 'Node', 'Express', 'MongoDB', 'REST APIs'],
+            codeUrl: 'https://github.com/sahilchaurasiyadev-prog/AuraEcommerce_Backend',
+            demoUrl: 'https://aura-ecommerce-angular.vercel.app/',
         },
         {
             id: 3,
             title: 'Content Generator',
             desc: 'A full-stack content generator app built with React, Node.js, and MongoDB. Features include user authentication, content creation, and progress tracking.',
             image: project3,
-            tags: ['Python', 'OpenAI API']
+            tags: ['Python', 'OpenAI API'],
+            codeUrl: 'Code_url',
+            demoUrl: 'demo_url',
         },
         {
             id: 4,
             title: 'Dashboard',
             desc: 'A full-stack dashboard app built with React, Node.js, and MongoDB. Features include user authentication, data visualization, and report generation.',
             image: project4,
-            tags: ['React', 'Node.js', 'MongoDB']
+            tags: ['React', 'Node.js', 'MongoDB'],
+            codeUrl: 'Code_url',
+            demoUrl: 'demo_url',
         },
         {
             id: 5,
             title: 'Chatbot',
             desc: 'A full-stack chatbot app built with React, Node.js, and MongoDB. Features include user authentication, natural language processing, and conversation management.',
             image: project5,
-            tags: ['React', 'Node.js', 'MongoDB']
+            tags: ['React', 'Node.js', 'MongoDB'],
+            codeUrl: 'Code_url',
+            demoUrl: 'demo_url',
         },
         {
             id: 6,
             title: 'Recipe Finder',
             desc: 'A full-stack recipe finder app built with React, Node.js, and MongoDB. Features include user authentication, recipe search, and saving favorite recipes.',
             image: project6,
-            tags: ['React', 'Node.js', 'MongoDB']
+            tags: ['React', 'Node.js', 'MongoDB'],
+            codeUrl: 'Code_url',
+            demoUrl: 'demo_url',
         },
     ];
 
@@ -134,7 +146,9 @@ const Projects = ({ darkMode }) => {
                                     ))}
                                 </div>
                                 <div className='flex gap-2'>
-                                    <a href="#"
+                                    <a href={project.codeUrl}
+                                        target='_blank'
+                                        rel='noopener noreferrer'
                                         style={{
                                             backgroundColor: darkMode ? '#374151' : '#f3f4f6',
                                             color: darkMode ? 'white' : '#374151'
@@ -147,7 +161,7 @@ const Projects = ({ darkMode }) => {
                                     </a>
 
                                     {/* Demo */}
-                                    <a href="#"
+                                    <a href={project.demoUrl} target='_blank' rel='noopener noreferrer'
                                         style={{
                                             background: 'linear-gradient(to right, #f97316, #f59e0b)',
 

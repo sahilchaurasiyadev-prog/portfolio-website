@@ -35,7 +35,7 @@ const About = ({ darkMode }) => {
                     <p className={`text-sm sm:text-base lg:text-lg xl:text-xl mb-6 sm:mb-8 leading-relaxed bg-linear-to-r from-orange-900/10 to-orange-900/5 p-4 sm:p-6 rounded-xl sm:rounded-2xl backdrop-blur-sm ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}
                         data-aos='fade-up'
                         data-aos-delay='500'>
-                        I’m a frontend developer based in Mumbai and a BSc IT graduate from Ghanshyamdas Saraf College. Currently working as a full-time Web Developer at Webtactic, I enjoy building clean, responsive, and user-friendly web experiences while continuously learning and growing as a developer.
+                        I’m a Software Developer based in Mumbai and a BSc IT graduate from Ghanshyamdas Saraf College. Currently working full-time as a Web Developer at Webtactic, I’ve worked on 20+ live client websites and also enjoy building full-stack applications using the MERN stack while continuously learning and growing as a developer.
                     </p>
                     <div
                         className='flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 lg:gap-8 mb-6 sm:mb-8'>
@@ -45,7 +45,7 @@ const About = ({ darkMode }) => {
                             className='text-center'
                             data-aos='zoom-in'
                             data-aos-delay='600'>
-                            <div className='text-2xl sm:text-3xl lg:text-4xl font-bold text-orange-400'>1+</div>
+                            <div className='text-2xl sm:text-3xl lg:text-4xl font-bold text-orange-400'>1.9+</div>
                             <div className={`text-xs sm:text-sm lg:text-base ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>Years of Experience</div>
                         </div>
 
@@ -54,7 +54,7 @@ const About = ({ darkMode }) => {
                             className='text-center'
                             data-aos='zoom-in'
                             data-aos-delay='650'>
-                            <div className='text-2xl sm:text-3xl lg:text-4xl font-bold text-orange-400'>15+</div>
+                            <div className='text-2xl sm:text-3xl lg:text-4xl font-bold text-orange-400'>20+</div>
                             <div className={`text-xs sm:text-sm lg:text-base ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>Client Websites</div>
                         </div>
 
@@ -68,14 +68,14 @@ const About = ({ darkMode }) => {
                         </div>
 
                     </div>
-                    <button className={`w-full sm:w-auto border-2 border-orange-500 inline-flex items-center justify-center py-2 px-4 sm:px-8 hover:shadow-[0_0_40px_rgba(255,165,0,0.7)] hover:scale-105 rounded-full text-base sm:text-lg font-semibold transition-all duration-300 ease-in-out transform
+                    {/* <button className={`w-full sm:w-auto border-2 border-orange-500 inline-flex items-center justify-center py-2 px-4 sm:px-8 hover:shadow-[0_0_40px_rgba(255,165,0,0.7)] hover:scale-105 rounded-full text-base sm:text-lg font-semibold transition-all duration-300 ease-in-out transform
                         ${darkMode
                             ? 'text-white bg-orange-500/10'
                             : 'text-gray-800 bg-white/90'}`}
                         data-aos='fade-up'
                         data-aos-delay='800'>
                         Learn More
-                    </button>
+                    </button> */}
 
                 </article>
             </div>
